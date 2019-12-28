@@ -12,21 +12,21 @@ public class Hero {
 	int moveSpeed;//移动速度
 	
 	//坑队友
-	void keng(){
+	public void keng(){
 		System.out.println("坑队友");
 	}
 	
 	//增加移动速度
-	void addSpeed(int movespeed){
+	public void addSpeed(int movespeed){
 		this.moveSpeed = this.moveSpeed + movespeed;
 	}
 	
-	void legendary(){
+	public void legendary(){
 		System.out.println("超神");
 	}
 	
 	//回血
-	void recovery(float hp){
+	public void recovery(float hp){
 		this.hp = this.hp + hp;
 	}
 	
