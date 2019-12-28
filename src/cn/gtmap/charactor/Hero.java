@@ -11,6 +11,25 @@ public class Hero {
 	float armor;//护甲
 	int moveSpeed;//移动速度
 	
+	//坑队友
+	void keng(){
+		System.out.println("坑队友");
+	}
+	
+	//增加移动速度
+	void addSpeed(int movespeed){
+		this.moveSpeed = this.moveSpeed + movespeed;
+	}
+	
+	void legendary(){
+		System.out.println("超神");
+	}
+	
+	//回血
+	void recovery(float hp){
+		this.hp = this.hp + hp;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -20,9 +39,11 @@ public class Hero {
 	public float getHp() {
 		return hp;
 	}
+	//设置护甲值
 	public void setHp(float hp) {
 		this.hp = hp;
 	}
+	//获取护甲值
 	public float getArmor() {
 		return armor;
 	}
